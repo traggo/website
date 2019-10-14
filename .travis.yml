@@ -1,0 +1,9 @@
+sudo: true
+
+language: bash
+
+services:
+  - docker
+
+script:
+  - make docs

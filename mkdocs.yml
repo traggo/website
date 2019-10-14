@@ -1,0 +1,69 @@
+site_name: traggo
+strict: true
+repo_name: traggo
+repo_url: https://github.com/traggo
+edit_uri: https://github.com/traggo/website/tree/master/docs
+theme:
+  name: 'material'
+  # Default values, taken from mkdocs_theme.yml
+  language: en
+  palette:
+    primary: indigo
+    accent: indigo
+  font:
+    text: Roboto
+    code: Roboto Mono
+
+plugins:
+  - search
+
+extra:
+  manifest: 'manifest.webmanifest'
+  social:
+    - type: 'github'
+      link: 'https://github.com/traggo'
+
+copyright: ''
+
+# Extensions
+markdown_extensions:
+  - markdown.extensions.admonition
+  - markdown.extensions.codehilite:
+      guess_lang: false
+  - markdown.extensions.def_list
+  - markdown.extensions.footnotes
+  - markdown.extensions.meta
+  - markdown.extensions.toc:
+      permalink: true
+  - pymdownx.arithmatex
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
+      user: traggo
+      repo: website
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+nav:
+  - Intro: index.md
+  - Terminology: terminology.md
+  - Installation: install.md
+  - First Login: first-login.md
+  - Configuration: config.md
+  - Development:
+      - Setup Environment: dev/setup.md
+      - Building from Source: dev/build.md
+      - Timezones: dev/timezones.md
+  - Reverse Proxy: reverse-proxy.md
