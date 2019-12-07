@@ -87,7 +87,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#intro" tabindex="1" class="md-skip">
+      <a href="#features" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -229,12 +229,44 @@
     
     <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
     
-      
     
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Intro
+      </label>
     
     <a href="." title="Intro" class="md-nav__link md-nav__link--active">
       Intro
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#features" class="md-nav__link">
+    Features
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#versioning" class="md-nav__link">
+    Versioning
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
     
   </li>
 
@@ -373,8 +405,29 @@
 <nav class="md-nav md-nav--secondary">
   
   
-    
   
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#features" class="md-nav__link">
+    Features
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#versioning" class="md-nav__link">
+    Versioning
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
   
 </nav>
                   </div>
@@ -389,13 +442,63 @@
                   <a href="https://github.com/traggo/website/tree/master/docs/index.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="intro">Intro<a class="headerlink" href="#intro" title="Permanent link">&para;</a></h1>
-<p>Traggo is a tag-based time tracking tool. In Traggo there are no tasks, only <a href="terminology/#tag">tagged</a> <a href="terminology/#timespan">time spans</a>.</p>
-<p>With <a href="terminology/#tag">tags</a>, Traggo tries to be as customizable as possible, f.ex. if you work on different projects you could add a <code>project</code>-tag.
+                  <h1>Intro</h1>
+                
+                <p align="center">
+    <a href="https://github.com/traggo/logo">
+        <img height="300px" src="https://raw.githubusercontent.com/traggo/logo/master/logo.png" />
+    </a>
+</p>
+
+<p align="center">
+    <a href="https://travis-ci.com/traggo/server">
+        <img alt="Build Status" src="https://travis-ci.com/traggo/server.svg?branch=master">
+    </a>
+     <a href="https://codecov.io/gh/traggo/server">
+        <img alt="codecov" src="https://codecov.io/gh/traggo/server/branch/master/graph/badge.svg">
+    </a>
+    <a href="https://goreportcard.com/report/github.com/traggo/server">
+        <img alt="Go Report Card" src="https://goreportcard.com/badge/github.com/traggo/server">
+    </a>
+    <a href="https://hub.docker.com/r/traggo/server">
+        <img alt="Docker Pulls" src="https://img.shields.io/docker/pulls/traggo/server.svg">
+    </a>
+    <a href="https://github.com/traggo/server/releases/latest">
+        <img alt="latest release" src="https://img.shields.io/github/release/traggo/server.svg">
+    </a>
+</p>
+
+<p>Traggo is a tag-based time tracking tool. In Traggo there are no tasks, only <a href="https://traggo.net/terminology/#tag">tagged</a> <a href="https://traggo.net/terminology/#timespan">time spans</a>.</p>
+<p>With <a href="https://traggo.net/terminology/#tag">tags</a>, Traggo tries to be as customizable as possible, f.ex. if you work on different projects you could add a <code>project</code>-tag.
 If you like to see statistics from the different things you do, you could add a <code>type</code>-tag with values like <code>email</code>, <code>programming</code>, <code>meeting</code>. 
 You can do it just as you like.</p>
 <p>If you want to use Traggo, you need to host it yourself. This way, you have the full control over your data and no third-party
 may be able to read it. Have a look at our <a href="install/">Install Guide</a>.</p>
+<h2 id="features">Features<a class="headerlink" href="#features" title="Permanent link">&para;</a></h2>
+<ul>
+<li>easy to setup</li>
+<li>time tracking (obviously)</li>
+<li>customizable dashboards with diagrams</li>
+<li>a list and calendar view of the tracked time</li>
+<li>sleek web ui with multiple themes</li>
+<li>simple user management</li>
+</ul>
+<hr />
+<p><a href="images/traggo_list.png">
+    <img width="265" alt="traggo list" src="images/traggo_list.png">
+</a>
+<a href="images/traggo_calendar.png">
+    <img width="265" alt="traggo list" src="images/traggo_calendar.png">
+</a>
+<a href="images/traggo_dashboard.png.png">
+    <img width="265" alt="traggo list" src="images/traggo_dashboard.png">
+</a></p>
+<p><a href="https://traggo.net/install/">Install</a> ᛫
+<a href="https://traggo.net/config/">Configuration</a> ᛫
+<a href="https://traggo.net/dev/setup/">Setup Dev Environment</a></p>
+<h2 id="versioning">Versioning<a class="headerlink" href="#versioning" title="Permanent link">&para;</a></h2>
+<p>We use <a href="http://semver.org/">SemVer</a> for versioning. For the versions available, see the
+<a href="https://github.com/traggo/server/tags">tags on this repository</a>.</p>
                 
                   
                 
