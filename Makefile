@@ -5,3 +5,5 @@ watch-docs:
 
 docs:
 	docker run --rm -it -v $$PWD:/docs squidfunk/mkdocs-material build
+
+.PHONY: docs watch-docs
