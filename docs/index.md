@@ -44,13 +44,13 @@ may be able to read it. Have a look at our [Install Guide](install.md).
 ---
 
 <a href="images/traggo_list.png">
-    <img width="265" alt="traggo list" src="images/traggo_list.png">
+    <img width="250" alt="traggo list" src="images/traggo_list.png">
 </a>
 <a href="images/traggo_calendar.png">
-    <img width="265" alt="traggo list" src="images/traggo_calendar.png">
+    <img width="250" alt="traggo list" src="images/traggo_calendar.png">
 </a>
-<a href="images/traggo_dashboard.png.png">
-    <img width="265" alt="traggo list" src="images/traggo_dashboard.png">
+<a href="images/traggo_dashboard.png">
+    <img width="250" alt="traggo list" src="images/traggo_dashboard.png">
 </a>
 
 [Install](https://traggo.net/install/) ᛫
