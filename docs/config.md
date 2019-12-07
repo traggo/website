@@ -10,15 +10,14 @@ will use the value of the first occurrence of a property.
 * Environment Variables
 * `.env.local` (in same path as the binary)
 * `.env` (in same path as the binary)
-* `$HOME/.config/server.ini`
+* `$HOME/.config/traggo/server.ini`
 * `/etc/traggo/server.ini`
 
 ## Properties
 
 The following properties can be set via environment variables / config file(s).
-
 !!! note
-    This example contains also the default values it is recommended to change the default username/password.
+    It is recommended to change the default username/password.
 
 ```ini
 # the port the http server should use
