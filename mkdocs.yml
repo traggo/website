@@ -7,6 +7,8 @@ theme:
   name: 'material'
   # Default values, taken from mkdocs_theme.yml
   language: en
+  favicon: 'images/favicon.png'
+  logo: 'images/favicon.png'
   palette:
     primary: indigo
     accent: indigo
