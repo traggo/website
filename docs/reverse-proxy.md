@@ -87,3 +87,29 @@ Proxy `http://domain.tld/traggo` to Traggo.
     ProxyPassReverse "/traggo/" http://localhost:3030/
 </VirtualHost>
 ```
+
+## Caddy 2
+
+### At domain root like `http://domain.tld`
+
+Proxy `http://domain.tld` to Traggo.
+
+```
+http://domain.tld {
+  reverse_proxy localhost:3030
+}
+```
+
+### At domain sub path like `http://domain.tld/traggo/`
+
+Proxy `http://domain.tld/traggo` to Traggo.
+
+```
+http://domain.tld {
+    route /traggo/* {
+        uri strip_prefix /traggo
+        reverse_proxy localhost:3030
+    }
+    redir /traggo /traggo/
+}
+```
