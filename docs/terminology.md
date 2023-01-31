@@ -53,6 +53,10 @@ A dashboard range is a [Static Range](#static-range) or a [Relative Range](#rela
 
 A static range has a concrete start and end point. Like f.ex. 10/12/1998 5:12 PM to 10/13/1998 5:12 PM.
 
+Dates must be in this format to work: `2023-01-01T00:00:00.000Z`
+
+(This currently only works in editable time field, they can be made static afterwards to hide them on the dashboard)
+
 ## Relative Range
 
 A relative range is relative to now. You can use simple operations to subtract time from it.
