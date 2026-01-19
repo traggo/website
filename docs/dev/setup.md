@@ -87,7 +87,10 @@ This starts the traggo server on `localhost3030`.
 
 _Commands must be executed inside the ui directory._
 
+> Note: Please provide NODE_OPTIONS=--openssl-legacy-provider to the start command
+> to workaround a known issue https://github.com/traggo/server/issues/201
+
 ```bash
-$ yarn start
+$ NODE_OPTIONS=--openssl-legacy-provider yarn start
 ```
 The ui development server will be started on `localhost:3000`.
