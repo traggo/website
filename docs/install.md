@@ -65,7 +65,7 @@ $ sudo ./traggo-0.0.9-linux-amd64
 
 ## Arch-Linux(aur)
 
-TODO
+https://aur.archlinux.org/packages/traggo-bin
 
 ## Source
 
